@@ -15266,7 +15266,8 @@ Main = (function()
 			end)
 
 			creditsWindow:Show()
-		end)
+			local main = creditsWindow.GuiElems.Main
+			main.Position = main.Position + UDim2.new(0, 0, 0, 20)
 
 		-- Create Main Apps
 		Main.CreateApp({Name = "Explorer", IconMap = Main.LargeIcons, Icon = "Explorer", Open = true, Window = Explorer.Window})
